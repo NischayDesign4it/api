@@ -14,3 +14,5 @@ class temphum(models.Model):
 
 class Status(models.Model):
     Status = models.BooleanField()
+
+

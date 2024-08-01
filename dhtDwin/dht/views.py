@@ -24,7 +24,7 @@ class TempHumListAPIView(APIView):
 class StatusPost(APIView):
     def post(self, request):
         # Ensure there's only one Status instance
-        instance, created = Status.objects.get_or_create(id=1)  # Assuming there should only be one instance with ID 1
+        instance, created = Status.objects.get_or_create(id=3)  # Assuming there should only be one instance with ID 1
 
         serializer = StatusSerializer(instance, data=request.data, partial=True)
         if serializer.is_valid():
