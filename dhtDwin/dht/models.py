@@ -11,3 +11,6 @@ class temphum(models.Model):
 
     def __str__(self):
         return str(self.temperature)
+
+class Status(models.Model):
+    Status = models.BooleanField()
